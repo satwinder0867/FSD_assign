@@ -1,0 +1,23 @@
+<html>
+    <head>
+    	<title>returns passed string with letters in alphabetical order</title>
+        <script>
+            function convert(){
+                var s = document.getElementById("in").value;
+                console.log(s);
+                var arr = new Array();
+                for(var i=0;i<s.length;i++){
+                    arr.push(s.charAt(i));
+                }
+                //console.log(arr);
+                arr.sort();
+                console.log(arr);
+            }    
+        </script>
+    </head>
+
+    <body>
+        <input type="text" id="in"><br>
+        <button onclick="convert()">click</button>
+    </body>
+</html>
